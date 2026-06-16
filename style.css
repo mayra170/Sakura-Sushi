@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle, #b11e1e 0%, #800c0c 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 30px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 950px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*CABEÇALHO*/
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-img {
+  width: 75px;  
+  height: 75px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.brand-name {
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 45px; 
+}
+
+/* Primeira Página */
+.card-image-container {
+  position: relative;
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.buttons-overlay {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 25px;
+  width: 90%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 14px 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  background-color: #f5f5f5;
+}
+
+/* Página Dois e Três */
+.banner-split-section {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  align-items: center;
+}
+
+.banner-image-side {
+  flex: 1;
+  align-self: stretch;
+}
+
+.side-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-text-side {
+  flex: 1.2;
+  padding: 45px;
+  color: #ffffff;
+}
+
+.banner-text-side h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.banner-text-side .quote {
+  font-style: italic;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+/*Página Quatro*/
+.pedidos-section {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  padding: 45px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.pedidos-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+}
+
+.pedidos-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.pedidos-links p { font-size: 1.15rem; color: #e0e0e0; }
+.pedidos-links strong { color: #ffffff; }
+
+.delivery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.delivery-container p { font-size: 1.1rem; color: #e0e0e0; }
+
+.delivery-badge {
+  background-color: #b11e1e;
+  color: #ffffff;
+  padding: 6px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/*Páginas Cinco até Dez*/
+.page-image-section {
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  background-color: #000;
+}
+
+.full-page-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+
